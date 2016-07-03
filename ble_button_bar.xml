@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <!--   2016 the Amsterdam University of Applied Sciences, Amsterdam, The Netherlands.
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+    @co-author Joey van der Bie - j.h.f.van.der.bie@hva.nl
+
+
+
+    original by
+    author dougkoellmer
+
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/default_margin">
+                <Button
+                    android:id="@+id/ble_nuke_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/scan_button_height"
+                    android:singleLine="true"
+                    android:text="@string/ble_nuke"
+                    android:textSize="@dimen/button_font_size"
+                    android:gravity="right"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/scan_infinite_button"
+                    android:singleLine="true"
+                    android:text="@string/scan_infinite"
+                    android:layout_height="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="11dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@color/white"
+                    android:layout_gravity="bottom|center_horizontal|center_vertical"/>
+
+                <Button
+                    android:id="@+id/scan_stop_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/scan_button_height"
+                    android:singleLine="true"
+                    android:text="@string/stop_scanning"
+                    android:layout_marginBottom="11dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@color/white"
+                    android:layout_gravity="bottom|center_horizontal|center_vertical" />
+
+</LinearLayout>
